@@ -1,0 +1,35 @@
+@import "./base.css";
+@import "./transaction.css";
+
+
+html, body {
+  height: 100%;
+}
+#app {
+  height: 100%;
+}
+
+.fill-w {
+  width: 100%;
+}
+.fill-h {
+  height: 100%;
+}
+.padding-content {
+  padding: 14px 14px 14px 14px;
+}
+
+.global-header-row {
+  height: var(--header-bar-height) !important;
+}
+.global-menu-col {
+  width: var(--menu-bar-width) !important;
+}
+.global-menu {
+  /* 锁定高度，使用内部滚动条 */
+  max-height: calc(100vh - var(--header-bar-height));
+  overflow-y: auto;
+}
+.global-menu-block {
+  box-shadow: 2px 2px 5px grey;
+}
